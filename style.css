@@ -38,8 +38,8 @@ header {
 }
 
 .logo h1 {
-  font-weight: 700;
   font-size: 25px;
+  font-family: "Lato-Bold";
   color: #ffffff;
   letter-spacing: -0.8px;
 }
