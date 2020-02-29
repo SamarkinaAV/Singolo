@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Lato-Black", "Helvetica", sans-serif;
+    text-overflow: clip;
+
+    background-color: #000000;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+
+    background-color: #ffffff;
+}
+
+.wrapper-portfolio {
+    background-color: #2d303a;
+}
+
+.portfolio {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.portfolio__title {
+    color: #666d89;
+    font-family: "Lato-Black";
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 59px;
+}
+
+.portfolio__description {
+    color: #767e9e;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 22px;
+}
+
+.portfolio__tags {
+    color: #767e9e;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 15px;
+}
+
+.tag {
+    border: 1px solid #666d89;
+    border-radius: 10%;
+}
+
+.tag:hover {
+    border: 1px solid #c5c5c5;
+    color: #dedede;
+    cursor: pointer;
+}
+
+.portfolio__block {
+    padding-top: 26px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio__image {
+    padding-bottom: 20px;
+}
+
+.wrapper__about-us {
+    background-color: #f2f2f2;
+}
+
+.about-us {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.about-us__title {}
+
+.about-us__description {}
+
+.employee {}
+
+.employee__content {}
+
+.contact__icon-fb {}
+
+.contact__icon-gmail {}
+
+.contact__icon-twitter {}
+
+.contact__icon-in {}
+
+.employee__name {}
+
+.employee__description {}
