@@ -77,11 +77,15 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 644px;
+
     padding-top: 26px;
     padding-top: 23px;
     overflow: hidden;
 }
+
+.portfolio__block img:nth-child(n+13) {
+    display: none;
+ }
 
 .portfolio__image {
     padding-bottom: 20px;
@@ -133,11 +137,14 @@ html {
 
 .employee__name {
     padding-top: 12px;
+    overflow: hidden;
 
     font-weight: 400;
     font-size: 18px;
     font-family: "Lato-Black";
     color: #666d89;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .employee__description {
