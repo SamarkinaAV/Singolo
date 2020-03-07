@@ -1,16 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" width="35" height="35">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34" width="34" height="34">
 	<defs>
-		<image width="50" height="90" id="img1" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MCA5MCIgd2lkdGg9IjUwIiBoZWlnaHQ9IjkwIj4KCTxkZWZzPgoJCTxjbGlwUGF0aCBjbGlwUGF0aFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgaWQ9ImNwMSI+CgkJCTxwYXRoIGQ9Ik0wIDBMNTAgMEw1MCA5MEwwIDkwWiIgLz4KCQk8L2NsaXBQYXRoPgoJPC9kZWZzPgoJPHN0eWxlPgoJCXRzcGFuIHsgd2hpdGUtc3BhY2U6cHJlIH0KCQkuc2hwMCB7IGZpbGw6ICMwMDAwMDAgfSAKCTwvc3R5bGU+Cgk8ZyBpZD0iUGFnZSAxIiBjbGlwLXBhdGg9InVybCgjY3AxKSI+CgkJPHBhdGggaWQ9IlBhdGggMSIgY2xhc3M9InNocDAiIGQ9Ik01MCAxNS42NUwzNS43MiAxNS42NUMzNC4wMyAxNS42NSAzMi4xNCAxNy44NyAzMi4xNCAyMC44NEwzMi4xNCAzMS4xNUw1MCAzMS4xNUw1MCA0NS44NUwzMi4xNCA0NS44NUwzMi4xNCA5MEwxNS4yOCA5MEwxNS4yOCA0NS44NUwwIDQ1Ljg1TDAgMzEuMTVMMTUuMjggMzEuMTVMMTUuMjggMjIuNUMxNS4yOCAxMC4wOSAyMy45IDAgMzUuNzIgMEw1MCAwTDUwIDE1LjY1WiIgLz4KCTwvZz4KPC9zdmc+"/>
+		<image width="34" height="34" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAEGElEQVRYR82YT4gbdRTHv++XrJtIlq6gUKEgVtuDpygUF720oIh/DoqItqfsmqyYTdKt4kyCYKNQkglitzvZoDvZbrxYhIoe1IMK3Yu1vWi8FNpV66HFQy8tCSbbJL8nM5spu9nsZiYJ2DkN/N57v8+833vv994Q7pKH3HBEo+nAbXHvi0Q4BJZBED0MYFfbxi0wXwWJMjPO3SP//a5QSFed2ncEMnUss1c0RYqAwwz+CZJWQLJMUt40Cu+Xzc0i0RNBFmIcLIIQfJBAzzBwRoCyi7ryZy+gHUHi8fnROmofgnmKwYVmdW2uVErf7GXUXA+F0uPewOgsgaIgOu2D/7iuJ9a2090WZDqee4SZzzLk783q2qxTgM6NLKAxX4mYHpJSvrZUSP3RDaYryPRM7gkW/D1LZIsL6pwTD/SSCc9osySQlJDPL+mp3zrlt4C8Gc08KjziPCAVQ0+Vem3gZj0Sz4QAkZMt+VSnZzaBhEJp30jA/wszPh+WJzpB254JNSq1iVIpXbfXN4FE4lqWWe4u5lMhN1/qVjYcz35DJC4b84q6BcQKTsgLjUp9X7+B6RTIDOCRMd8qQUzYqX3HI+G4ZoDl9WI+lXZq0JSzAptkAURP2nqGrvasT+FYJk1C7DHm1bCpZylMKdqYp4Z/GpXaHjfemH734/v5dusKgPs2wjsBWfeK/1rLjwdP59SKBRKO5V4HycNFPfmyK2/EcseY+JO2zlkGfjbfi7qzlDdjBSzOFPPKlxZIJK4tssQlt5kSSWTnwHTUAvHQ48acYpV7p087gx4zdHV6HSSWvcDgZDGfWnFiJDKbC5pyLPEeMR+x3pneIC8um+9OgcKxjHknZY18csL2yI1GQx4ofZr62xFIXOOd5JzEiOWA6IkgPN4fDV19wAZZM3R11AlE+yiHAtK2Ze3dH8iQjqYbyA20ms/avYVjzwwYrFuPxmWw2qADZ02XYL070rffgjawRzoLWr8lfhCQdom/3vJj950Sb0VvQiuylNfcXHqDgHS99EwQszMjjzjfrNT2u7n4nGbYRrn1PtZ/xUP09Gfzyqq5trkxSuQ0SN5v5NVX+tnAqU4kpn1NhNVFXVVsna2t4pj/Ikssu70AnUK0L7rJgHdk4uTJd2pdQewj+t+bZ5vOHickc2Ypnzzl9Gt3kgvHtONEeJskvbC4oPzaKbttS9ceK74C469GtTbZbwBbaRrwL4OwV7bkq64GLJvWGjmp/hEzT4Kx0KzWTjkFWh85/UdBmCGiZR/7Puhr5NzourcSuX0tZoWAI2D8IMErsiXLXuJbG4fwJtMu4RFBAToIwnMgfCFAmp2iOx1dz257o7L5W6Lh9b1Ekg4xwezSzN8S420Zczi/SowyCz430qx/O/TfEsMI1l42/gONVTJBJshNSAAAAABJRU5ErkJggg=="/>
 	</defs>
 	<style>
 		tspan { white-space:pre }
-		.shp0 { fill: none;stroke: #666d89 } 
 	</style>
-	<g id="About Us">
+	<g id="Footer">
 		<g id="Social Media">
 			<g id="Facebook">
-				<use id="facebook" href="#img1" transform="matrix(0.16,0,0,0.156,13,10)"/>
-				<path id="Ellipse 2" class="shp0" d="M17 1C25.84 1 33 8.16 33 17C33 25.84 25.84 33 17 33C8.16 33 1 25.84 1 17C1 8.16 8.16 1 17 1Z" />
+				<use id="Ellipse 2" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
 			</g>
 		</g>
 	</g>
