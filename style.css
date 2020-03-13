@@ -58,13 +58,6 @@ header {
   list-style-type: none;
 }
 
-.navigation a {
-  font-size: 12px;
-  font-family: "Lato";
-  color: #ffffff;
-  text-decoration: none;
-}
-
 li.navigation__item_separator {
   padding-top: 5.5px;
   padding-right: 2px;
@@ -72,7 +65,18 @@ li.navigation__item_separator {
   font-size: 10px;
 }
 
-a:hover {
+.navigation__link {
+  font-size: 12px;
+  font-family: "Lato";
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navigation__link:hover {
+  color: #f06c64;
+}
+
+.navigation__link-active {
   color: #f06c64;
 }
 
@@ -253,6 +257,12 @@ a:hover {
   border-radius: 10%;
 }
 
+.tag-active {
+  color: #dedede;
+
+  border: 1px solid #c5c5c5;
+}
+
 .tag:hover {
   color: #dedede;
 
@@ -274,7 +284,15 @@ a:hover {
 }
 
 .portfolio__image {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.portfolio__image:hover {
+  border: 5px solid  #F06C64;
+}
+
+.portfolio__image-active {
+  border: 5px solid  #F06C64;
 }
 
 .wrapper__about-us {
