@@ -2,6 +2,8 @@ window.onload = function () {
     addNavClickHandler();
     addBorderInPortfolioImg();
     addTagsClickHandler();
+    switchDisplayVertical();
+    switchDisplayHorizontal();
 };
 
 const PORTFOLIO = document.querySelector('.portfolio__block');
@@ -37,5 +39,22 @@ const addTagsClickHandler = () => {
             let portfolioList = PORTFOLIO.querySelectorAll('.portfolio__image');
             PORTFOLIO.prepend(portfolioList[portfolioList.length - 1]);
         };
+    });
+};
+
+// add switch display phone
+const switchDisplayVertical = () => {
+    document.getElementById('phone_vert').addEventListener('click', event => {
+        let display = document.getElementById('phone_vert').querySelector('div');
+        display.classList.toggle('display-off')
+        event.preventDefault()
+    });
+};
+
+const switchDisplayHorizontal = () => {
+    document.getElementById('phone_hor').addEventListener('click', event => {
+        let display = document.getElementById('phone_hor').querySelector('div');
+        display.classList.toggle('display-off')
+        event.preventDefault()
     });
 };
