@@ -4,6 +4,7 @@ window.onload = function () {
     addTagsClickHandler();
     switchDisplayVertical();
     switchDisplayHorizontal();
+    initSlider();
 };
 
 const PORTFOLIO = document.querySelector('.portfolio__block');
@@ -42,7 +43,7 @@ const addTagsClickHandler = () => {
     });
 };
 
-// add switch display phone
+// switch display phone
 const switchDisplayVertical = () => {
     document.getElementById('phone_vert').addEventListener('click', event => {
         let display = document.getElementById('phone_vert').querySelector('div');
