@@ -86,7 +86,7 @@ li.navigation__item_separator {
 
 .wrapper-slider {
   background-color: #f06c64;
-  box-shadow: 0 -6px 0 0 #323746;
+  box-shadow: 0 -6px 0 0 #f06c64;
 }
 
 #phone_vert {
@@ -96,6 +96,7 @@ li.navigation__item_separator {
 
   width: 215px;
   height: 458px;
+  z-index: 3;
 }
 
 #phone_hor {
@@ -105,6 +106,7 @@ li.navigation__item_separator {
 
   width: 458px;
   height: 215px;
+  z-index: 3;
 }
 
 #phone_vert .display {
@@ -141,14 +143,30 @@ li.navigation__item_separator {
   padding: 0 0 10px 0;
 }
 
+.hidden {
+  display: none;
+}
+
+.slider__img {
+  position: relative;
+}
+
+.slide-single {
+  position: absolute;
+  transition: all ease 1s;
+}
+
 .slider__arrow-right {
   padding: 0 3px 8px 0;
+  order: 1;
 
+  z-index: 2;
   transform: scaleX(-1);
 }
 
 .slider__arrow-left {
   padding: 0 0 8px 2px;
+  z-index: 2;
 }
 
 .slider__arrow-left:hover {
@@ -161,10 +179,6 @@ li.navigation__item_separator {
   transform: scaleX(-1) scale(1.2);
 
   transition-duration: 0.2s;
-}
-
-img:nth-child(2) {
-  padding: 0 0 126px 73px;
 }
 
 .wrapper-services {
