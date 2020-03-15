@@ -108,7 +108,7 @@ const initSlider = () => {
         setTimeout(function () {
             slides2[0].remove();
             draw();
-        }, 1000);
+        }, 500);
     }
 
     draw(); 

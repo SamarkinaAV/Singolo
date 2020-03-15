@@ -87,12 +87,13 @@ li.navigation__item_separator {
 .wrapper-slider {
   background-color: #f06c64;
   box-shadow: 0 -6px 0 0 #f06c64;
+  overflow: hidden;
 }
 
 #phone_vert {
   position: absolute;
-  top: 52px;
-  left: 71px;
+  top: 50px;
+  left: 72px;
 
   width: 215px;
   height: 458px;
@@ -101,7 +102,7 @@ li.navigation__item_separator {
 
 #phone_hor {
   position: absolute;
-  top: 175px;
+  top: 173px;
   left: 384px;
 
   width: 458px;
@@ -111,7 +112,7 @@ li.navigation__item_separator {
 
 #phone_vert .display {
   position: absolute;
-  top: 65px;
+  top: 64px;
   left: 14px;
 
   width: 188px;
@@ -120,8 +121,8 @@ li.navigation__item_separator {
 
 #phone_hor .display {
   position: absolute;
-  top: 14px;
-  left: 60px;
+  top: 13px;
+  left: 61px;
 
   width: 333px;
   height: 188px;
