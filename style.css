@@ -143,10 +143,6 @@ li.navigation__item_separator {
   padding: 0 0 10px 0;
 }
 
-.hidden {
-  display: none;
-}
-
 .slider__img {
   position: relative;
 }
@@ -154,6 +150,7 @@ li.navigation__item_separator {
 .slide-single {
   position: absolute;
   transition: all ease 1s;
+  left: -40px;
 }
 
 .slider__arrow-right {
