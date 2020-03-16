@@ -203,13 +203,13 @@
                     dapibus,
                     tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="two-columns">
-                    <form method="POST">
-                        <input type="text" name="username" required placeholder="Name (Required)">
-                        <input type="email" name="email-address" required placeholder="Email (Required)">
-                        <input type="text" name="subject" placeholder="Subject">
-                        <textarea name="detail-project" placeholder="Describe your project in detail..."
+                    <form action="./index.html" method="GET" class="contacts-form" id="contacts-form">
+                        <input class="contact-form__input_name" type="text" name="username" required placeholder="Name (Required)">
+                        <input class="contact-form__input_mail" type="email" name="email-address" required placeholder="Email (Required)">
+                        <input class="contact-form__input_subject" type="text" name="subject" placeholder="Subject">
+                        <textarea class="contact-form__input_description" name="detail-project" placeholder="Describe your project in detail..."
                             style="resize: none;"></textarea>
-                        <button type="submit">Submit</button>
+                        <button type="submit" id="button">Submit</button>
                     </form>
                     <div class="contact-information">
                         <h3 class="contact-information__title" id="contact">Contact Information</h3>
@@ -232,9 +232,9 @@
                 <div class="message-block hidden">
                     <div class="message">
                         <p class="popup__header">Письмо отправлено</p>
-                        <p class="popup__topic"></p>
-                        <p class="popup__description"></p>
-                        <button class="popup__button">OK</button>
+                        <p class="popup__topic popup-text"></p>
+                        <p class="popup__description popup-text"></p>
+                        <button class="popup__button" id="close-button">OK</button>
                     </div>
                 </div>
             </section>

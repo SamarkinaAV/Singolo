@@ -5,12 +5,12 @@ window.onload = function () {
     switchDisplayVertical();
     switchDisplayHorizontal();
     initSlider();
+    popupMessage();
 };
 
 const PORTFOLIO = document.querySelector('.portfolio__block');
 const MENU = document.querySelector('.navigation');
 const TAGS = document.querySelector('.portfolio__tags');
-
 
 // selected item menu in navigation
 const addNavClickHandler = () => {
@@ -60,17 +60,16 @@ const switchDisplayHorizontal = () => {
     });
 };
 
+// add slider active
 const initSlider = () => {
     let slides = document.querySelectorAll('.slide-single');
     let slider = [];
-        for (let i = 0; i < slides.length; i++) {
-            slider[i] = slides[i].src;
-            slides[i].remove();
-        };
-        let step = 0;
-        let offset = 0;
-
-
+    for (let i = 0; i < slides.length; i++) {
+        slider[i] = slides[i].src;
+        slides[i].remove();
+    };
+    let step = 0;
+    let offset = 0;
 
     function draw() {
         let img = document.createElement('img');
@@ -84,7 +83,7 @@ const initSlider = () => {
         }
         offset = 1;
     };
-   
+
     function slideLeft() {
         let slides2 = document.querySelectorAll('.slide-single');
         let offset2 = 0;
@@ -111,7 +110,52 @@ const initSlider = () => {
         }, 500);
     }
 
-    draw(); 
+    draw();
     document.getElementById('arrow_left').addEventListener('click', slideLeft);
     document.getElementById('arrow_right').addEventListener('click', slideRight);
+};
+
+// add pop-up message
+const popupMessage = () => {
+    let form = document.getElementById('contacts-form');
+    let form_description = document.querySelector('.contact-form__input_description');
+    let form_subject = document.querySelector('.contact-form__input_subject');
+
+    form.addEventListener('submit', event => {
+        event.preventDefault();
+        if (form.checkValidity()) {
+            if ((form_subject.value)) {
+                document.querySelector('.popup__topic').innerHTML = '<b>Тема:</b> ' + form_subject.value
+            } else {
+                document.querySelector('.popup__topic').innerHTML = 'Без темы';
+            };
+
+            let description = '';
+            if (form_description.value) {
+                description = '<b>Описание:</b> ';
+                if (form_description.value.length > 250) {
+                    description += form_description.value.substring(0, 250) + '...';
+                } else {
+                    description += form_description.value;
+                };
+            } else {
+                description = 'Без описания';
+            };
+
+            document.querySelector('.popup__description').innerHTML = description;
+            document.querySelector('.message-block').classList.remove('hidden');
+        }
+        form.reset();
+        return false;
+    });
+    const MESSAGE_BLOCK = document.querySelector('.message-block');
+    const BUTTON_CLOSE = document.getElementById('close-button');
+
+    function popup_close(event) {
+        if (event.target === MESSAGE_BLOCK || event.target === BUTTON_CLOSE) {
+            MESSAGE_BLOCK.classList.add('hidden');
+        }
+    }
+    MESSAGE_BLOCK.addEventListener('click', popup_close);
+    BUTTON_CLOSE.addEventListener('click', popup_close);
 };

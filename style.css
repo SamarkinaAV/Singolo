@@ -147,7 +147,6 @@ li.navigation__item_separator {
   max-width: 940px;
   height: 600px;
   margin: 0 auto;
-  padding: 0 0 10px 0;
 }
 
 .slider__img {
@@ -666,10 +665,11 @@ button:hover {
 .message {
   position: absolute;
   top: 50%;
-  left: 42%;
-  width: 300px;
+  left: 35%;
+  width: 400px;
   background-color: #f2f2f2;
   padding: 5px;
+  color: #2d303a;
   text-align: center;
   border-radius: 20px;
 }
