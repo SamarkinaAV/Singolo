@@ -98,7 +98,7 @@ li.navigation__item_separator {
 
 #phone_vert {
   position: absolute;
-  top: 50px;
+  top: 54px;
   left: 72px;
   z-index: 3;
 
@@ -108,7 +108,7 @@ li.navigation__item_separator {
 
 #phone_hor {
   position: absolute;
-  top: 173px;
+  top: 177px;
   left: 384px;
   z-index: 3;
 
@@ -118,7 +118,7 @@ li.navigation__item_separator {
 
 #phone_vert .display {
   position: absolute;
-  top: 64px;
+  top: 65px;
   left: 14px;
 
   width: 188px;
@@ -127,7 +127,7 @@ li.navigation__item_separator {
 
 #phone_hor .display {
   position: absolute;
-  top: 13px;
+  top: 14px;
   left: 61px;
 
   width: 333px;
