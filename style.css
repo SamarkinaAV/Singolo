@@ -53,8 +53,8 @@ header {
 }
 
 .navigation {
-  flex-wrap: wrap;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation li {
@@ -194,9 +194,9 @@ li.navigation__item_separator {
 
 .services {
   max-width: 940px;
-  height: 500px;
+  padding: 45px 0px 38px 0px;
   margin: 0 auto;
-  padding-top: 45px;
+
 }
 
 .services__title {
@@ -656,9 +656,11 @@ button:hover {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
+
   width: 100%;
   height: 100%;
-  z-index: 100;
+
   background: #0008;
 }
 
@@ -666,11 +668,14 @@ button:hover {
   position: absolute;
   top: 50%;
   left: 35%;
+
   width: 400px;
-  background-color: #f2f2f2;
   padding: 5px;
-  color: #2d303a;
+
   text-align: center;
+  color: #2d303a;
+
+  background-color: #f2f2f2;
   border-radius: 20px;
 }
 
@@ -694,4 +699,55 @@ button:hover {
   font-size: 12px;
   font-family: "Lato-Regular";
   color: #666d89;
+}
+
+@media (max-width: 1019px) and (min-width: 768px) {
+  .services,
+  .services-list,
+  .quote,
+  .quote__description,
+  .footer {
+    height: unset;
+    width: unset;
+  }
+
+  header,
+  .slider,
+  .portfolio,
+  .about-us,
+  .services,
+  .quote,
+  .footer {
+    max-width: 695px;
+  }
+
+  .slider {
+    height: 452px;
+  }
+
+  .slide-single {
+    width: 768px;
+  }
+
+  .employee__content {
+    width: 219px;
+  }
+
+  .employee__content > img {
+    width: 219px;
+    height: 219px;
+  }
+
+  input, textarea {
+    width: 442px;
+  }
+
+.footer__copyright {
+  display: none;
+}
+
+.footer {
+  justify-content: center;
+}
+
 }
