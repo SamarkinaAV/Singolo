@@ -194,9 +194,8 @@ li.navigation__item_separator {
 
 .services {
   max-width: 940px;
-  padding: 45px 0px 38px 0px;
   margin: 0 auto;
-
+  padding: 45px 0 38px 0;
 }
 
 .services__title {
@@ -333,7 +332,6 @@ li.navigation__item_separator {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 26px;
   padding-top: 23px;
   overflow: hidden;
 }
@@ -493,7 +491,6 @@ html {
 }
 
 .quote__description {
-  width: 944px;
   padding-top: 19px;
 
   font-size: 18px;
@@ -557,7 +554,7 @@ button {
 
   background-color: #d6564f;
   border: none;
-  border-radius: 10%;
+  border-radius: 5px;
 }
 
 button:hover {
@@ -705,10 +702,9 @@ button:hover {
   .services,
   .services-list,
   .quote,
-  .quote__description,
   .footer {
-    height: unset;
     width: unset;
+    height: unset;
   }
 
   header,
@@ -726,7 +722,41 @@ button:hover {
   }
 
   .slide-single {
+    left: -37px;
+
     width: 768px;
+  }
+
+  #phone_vert {
+    top: 41px;
+    left: 47px;
+
+    width: 162px;
+    height: 345px;
+  }
+
+  #phone_vert .display {
+    top: 48px;
+    left: 11px;
+
+    width: 142px;
+    height: 252px;
+  }
+
+  #phone_hor {
+    top: 134px;
+    left: 284px;
+
+    width: 345px;
+    height: 162px;
+  }
+
+  #phone_hor .display {
+    top: 10px;
+    left: 44px;
+
+    width: 251px;
+    height: 142px;
   }
 
   .employee__content {
@@ -738,16 +768,88 @@ button:hover {
     height: 219px;
   }
 
-  input, textarea {
+  input,
+  textarea {
     width: 442px;
   }
 
-.footer__copyright {
-  display: none;
+  .footer__copyright {
+    display: none;
+  }
+
+  .footer {
+    justify-content: center;
+  }
 }
 
-.footer {
-  justify-content: center;
+@media (max-width: 767px) and (min-width: 375px) {
+  .services-list,
+  .quote,
+  .footer,
+  form,
+  .two-columns {
+    width: unset;
+  }
+
+  header,
+  .slider,
+  .portfolio,
+  .about-us,
+  .services,
+  .quote,
+  .footer {
+    max-width: 315px;
+  }
+
+  .footer__copyright, .navigation {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  .portfolio__image {
+    width: 151px;
+    height: 128px;
+  }
+
+  .wrapper__about-us {
+    padding-bottom: 45px;
+  }
+
+  .contact {
+    padding-bottom: 23px;
+  }
+
+  .contacts-info {
+    padding-bottom: 40px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  input,
+  textarea {
+    width: 315px;
+  }
+
+  .two-columns {
+    display: unset;
+  }
+
+  button {
+    width: 315px;
+  }
+
+  .footer {
+    justify-content: center;
+  }
+
 }
 
+@media (max-width: 374px) {
 }
