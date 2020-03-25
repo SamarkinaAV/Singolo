@@ -160,19 +160,18 @@ const popupMessage = () => {
     BUTTON_CLOSE.addEventListener('click', popup_close);
 };
 
-//sript for hamburger
+// add hamburger-menu
 const hamburger = document.getElementById('hamburger');
-const menu = document.getElementById('menu');
+const hamburgerMenu = document.getElementById('menu');
 hamburger.addEventListener('click', () => {
-	{
-		if (hamburger.classList[1] == 'is-active') {
-			hamburger.classList.remove('is-active');
-			menu.classList.remove('active-menu');
-		}
-		else{
-			hamburger.classList.add('is-active');
-			menu.classList.add('active-menu');
-		}
-		
+    {
+        if (hamburger.classList[1] == 'is-active') {
+            hamburger.classList.remove('is-active');
+            hamburgerMenu.classList.remove('active-menu');
+        } else {
+            hamburger.classList.add('is-active');
+            hamburgerMenu.classList.add('active-menu');
+        }
+
     }
 });

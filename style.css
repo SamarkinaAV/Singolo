@@ -5,6 +5,7 @@
 }
 
 html {
+  font-size: 10px;
   font-family: "Lato-Black", "Helvetica", sans-serif;
   text-overflow: clip;
 
@@ -31,18 +32,19 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   max-width: 940px;
   height: 95px;
   margin: 0 auto;
 }
 
-/* .hamburger {
+.hamburger {
   display: none;
 }
 
 @media (max-width: 767px) {
   .hamburger {
+    z-index: 5;
+
     display: block;
     width: 25px;
     height: 20px;
@@ -60,7 +62,7 @@ header {
   transform: rotate(90deg);
 }
 
-.hamburger__ul {
+.hamburger__menu {
   position: fixed;
   top: 0;
   left: -100%;
@@ -78,34 +80,18 @@ header {
   visibility: hidden;
 }
 
-.hamburger__ul .menu__h1 h1 {
-  margin-top: 25px;
-  margin-bottom: 184px;
-  margin-left: -30px;
-
-  font-size: 19.6875px;
-  letter-spacing: -0.5px;
-}
-
-.hamburger__ul .nav__link {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
-  letter-spacing: -0.5px;
-}
-
 .active-menu {
   left: 0;
 
   visibility: visible;
-} */
+}
 
 .logo {
   padding-bottom: 7px;
 }
 
 .logo h1 {
-  font-size: 25px;
+  font-size: 2.5rem;
   font-family: "Lato-Bold";
   color: #ffffff;
   letter-spacing: -0.8px;
@@ -130,11 +116,11 @@ li.navigation__item_separator {
   padding-top: 5.5px;
   padding-right: 2px;
 
-  font-size: 10px;
+  font-size: 1rem;
 }
 
 .navigation__link {
-  font-size: 12px;
+  font-size: 1.2rem;
   font-family: "Lato-Regular";
   color: #ffffff;
   text-decoration: none;
@@ -265,7 +251,7 @@ li.navigation__item_separator {
   margin: auto;
   padding-top: 14px;
 
-  font-size: 30px;
+  font-size: 3rem;
   font-family: "Lato-Black";
   color: #666d89;
 }
@@ -273,7 +259,7 @@ li.navigation__item_separator {
 .services__description {
   padding-top: 18px;
 
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 29px;
   font-family: "Lato-Light";
   text-align: justify;
@@ -312,7 +298,7 @@ li.navigation__item_separator {
 }
 
 .services-list__title {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-family: "Lato-Black";
   color: #666d89;
 
@@ -320,7 +306,7 @@ li.navigation__item_separator {
 }
 
 .services-list__description {
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 21px;
   font-family: "Lato-Regular";
   text-align: justify;
@@ -345,7 +331,7 @@ li.navigation__item_separator {
   padding-top: 59px;
 
   font-weight: 400;
-  font-size: 30px;
+  font-size: 3rem;
   font-family: "Lato-Black";
   color: #666d89;
 }
@@ -354,7 +340,7 @@ li.navigation__item_separator {
   padding-top: 22px;
 
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-family: "Lato-Light";
   text-align: justify;
   color: #767e9e;
@@ -365,7 +351,7 @@ li.navigation__item_separator {
   padding-left: 2px;
 
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1.2rem;
   font-family: "Lato-Regular";
   color: #767e9e;
 }
@@ -428,7 +414,7 @@ li.navigation__item_separator {
   padding-left: 1px;
 
   font-weight: 400;
-  font-size: 30px;
+  font-size: 3rem;
   font-family: "Lato-Black";
   color: #666d89;
 }
@@ -437,7 +423,7 @@ li.navigation__item_separator {
   padding-top: 18px;
 
   font-weight: 300;
-  font-size: 17.9px;
+  font-size: 1.79rem;
   line-height: 30px;
   font-family: "Lato-Light";
   text-align: justify;
@@ -464,7 +450,7 @@ li.navigation__item_separator {
   overflow: hidden;
 
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-family: "Lato-Black";
   color: #666d89;
   white-space: nowrap;
@@ -475,7 +461,7 @@ li.navigation__item_separator {
   padding-top: 8px;
 
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 21px;
   font-family: "Lato-Regular";
   text-align: justify;
@@ -549,14 +535,14 @@ html {
   padding-top: 59px;
 
   font-weight: 400;
-  font-size: 30px;
+  font-size: 3rem;
   font-family: "Lato-Black";
 }
 
 .quote__description {
   padding-top: 19px;
 
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 29px;
   font-family: "Lato-Light";
   text-align: justify;
@@ -585,7 +571,7 @@ input {
 
 input::placeholder {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1.2rem;
   font-family: "Lato-Regular";
   color: #f48c8f;
 }
@@ -602,7 +588,7 @@ textarea {
 
 textarea::placeholder {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1.2rem;
   font-family: "Lato-Regular";
   color: #f48c8f;
 }
@@ -611,7 +597,7 @@ button {
   margin-top: 10px;
   padding: 10px;
 
-  font-size: 13px;
+  font-size: 1.3rem;
   font-family: "Lato-Regular";
   color: #f0d8d9;
 
@@ -645,7 +631,7 @@ button:hover {
 
 .contact-information__title {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-family: "Lato-Black";
 }
 
@@ -653,7 +639,7 @@ button:hover {
   padding-top: 8px;
 
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 22px;
   font-family: "Lato-Regular";
   text-align: justify;
@@ -664,7 +650,7 @@ button:hover {
 
   list-style: none;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1.2rem;
   font-family: "Lato-Regular";
 }
 
@@ -756,12 +742,13 @@ button:hover {
 .footer__copyright {
   padding-top: 18px;
 
-  font-size: 12px;
+  font-size: 1.2rem;
   font-family: "Lato-Regular";
   color: #666d89;
 }
 
 @media (max-width: 1019px) and (min-width: 768px) {
+
   .services,
   .services-list,
   .quote,
@@ -826,7 +813,7 @@ button:hover {
     width: 219px;
   }
 
-  .employee__content > img {
+  .employee__content>img {
     width: 219px;
     height: 219px;
   }
@@ -846,6 +833,7 @@ button:hover {
 }
 
 @media (max-width: 767px) and (min-width: 375px) {
+
   .services-list,
   .quote,
   .footer,
@@ -955,6 +943,7 @@ button:hover {
 }
 
 @media (max-width: 374px) {
+
   .services-list,
   .quote,
   .footer,
