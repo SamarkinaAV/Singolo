@@ -953,8 +953,16 @@ button:hover {
     display: unset;
   }
 
+  .message {
+    left: 10%;
+
+    width: 300px;
+
+    border-radius: 15px;
+  }
+
   button {
-    width: 315px;
+    width: 250px;
   }
 
   .footer {
@@ -1064,8 +1072,16 @@ button:hover {
     display: unset;
   }
 
-  button {
+  .message {
+    left: 10%;
+
     width: 300px;
+
+    border-radius: 15px;
+  }
+
+  button {
+    width: 250px;
   }
 
   .footer {
