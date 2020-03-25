@@ -59,6 +59,9 @@ header {
 }
 
 #hamburger.is-active {
+  position: absolute;
+  left: 25px;
+
   transform: rotate(90deg);
 }
 
@@ -88,6 +91,26 @@ header {
 
 .logo {
   padding-bottom: 7px;
+}
+
+.logo-hamburger {
+  position: absolute;
+  left: 80px;
+}
+
+.navigation-hamburger {
+  position: absolute;
+  top: 200px;
+
+  list-style: none;
+}
+
+.navigation-hamburger a {
+  font-size: 2.5rem;
+}
+
+.navigation-hamburger li {
+  padding-bottom: 15px;
 }
 
 .logo h1 {
@@ -748,7 +771,6 @@ button:hover {
 }
 
 @media (max-width: 1019px) and (min-width: 768px) {
-
   .services,
   .services-list,
   .quote,
@@ -813,7 +835,7 @@ button:hover {
     width: 219px;
   }
 
-  .employee__content>img {
+  .employee__content > img {
     width: 219px;
     height: 219px;
   }
@@ -833,7 +855,6 @@ button:hover {
 }
 
 @media (max-width: 767px) and (min-width: 375px) {
-
   .services-list,
   .quote,
   .footer,
@@ -943,7 +964,6 @@ button:hover {
 }
 
 @media (max-width: 374px) {
-
   .services-list,
   .quote,
   .footer,

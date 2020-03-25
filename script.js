@@ -161,17 +161,9 @@ const popupMessage = () => {
 };
 
 // add hamburger-menu
-const hamburger = document.getElementById('hamburger');
-const hamburgerMenu = document.getElementById('menu');
 hamburger.addEventListener('click', () => {
-    {
-        if (hamburger.classList[1] == 'is-active') {
-            hamburger.classList.remove('is-active');
-            hamburgerMenu.classList.remove('active-menu');
-        } else {
-            hamburger.classList.add('is-active');
-            hamburgerMenu.classList.add('active-menu');
-        }
-
-    }
+    document.getElementById('hamburger').classList.toggle('is-active');
+    document.getElementById('menu').classList.toggle('active-menu');
+    document.querySelector('.logo').classList.toggle('logo-hamburger');
+    document.querySelector('.navigation').classList.toggle('navigation-hamburger');
 });
