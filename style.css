@@ -10,6 +10,8 @@ html {
   text-overflow: clip;
 
   background-color: #000000;
+
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -771,6 +773,7 @@ button:hover {
 }
 
 @media (max-width: 1019px) and (min-width: 768px) {
+
   .services,
   .services-list,
   .quote,
@@ -835,7 +838,7 @@ button:hover {
     width: 219px;
   }
 
-  .employee__content > img {
+  .employee__content>img {
     width: 219px;
     height: 219px;
   }
@@ -855,6 +858,7 @@ button:hover {
 }
 
 @media (max-width: 767px) and (min-width: 375px) {
+
   .services-list,
   .quote,
   .footer,
@@ -972,6 +976,7 @@ button:hover {
 }
 
 @media (max-width: 374px) {
+
   .services-list,
   .quote,
   .footer,
