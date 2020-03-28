@@ -27,6 +27,7 @@ function onScroll(event) {
     const curPos = window.scrollY;
     const positionList = document.querySelectorAll("body > div");
     const links = document.querySelectorAll('.navigation a');
+    const linksHamburger = document.querySelectorAll('.navigation-hamburger a');
 
     positionList.forEach((element) => {
         if (element.offsetTop <= curPos && (element.offsetTop + element.offsetHeight) > curPos) {
@@ -36,10 +37,16 @@ function onScroll(event) {
                     a.classList.add('navigation__link-active');
                 };
             });
+
+            linksHamburger.forEach((a) => {
+                a.classList.remove('navigation__link-active');
+                if (element.getAttribute('id') === a.getAttribute('href').substring(1)) {
+                    a.classList.add('navigation__link-active');
+                };
+            });
         };
     });
 };
-
 
 // add border around img in portfolio-block
 const addBorderInPortfolioImg = () => {
@@ -184,18 +191,18 @@ const popupMessage = () => {
 // add hamburger-menu
 const hamburger = document.getElementById('hamburger');
 const hamburgerMenu = document.getElementById('menu');
+const linksHamburger = document.querySelectorAll('.navigation-hamburger a');
+
 hamburger.addEventListener('click', () => {
     {
         if (hamburger.classList[1] == 'is-active') {
             hamburger.classList.remove('is-active');
             hamburgerMenu.classList.remove('active-menu');
             document.querySelector('.logo').classList.toggle('logo-hamburger');
-            // document.querySelector('.navigation').classList.toggle('navigation-hamburger');
         } else {
             hamburger.classList.add('is-active');
             hamburgerMenu.classList.add('active-menu');
             document.querySelector('.logo').classList.toggle('logo-hamburger');
-            // document.querySelector('.navigation').classList.toggle('navigation-hamburger');
         }
 
     }
